@@ -1,0 +1,21 @@
+%h3 important quotes
+
+.subtitle pick a writer, get a randomly generated sentence that he or she probably said at some point.
+
+%select#writer
+  %option(value="shakespeare") billiam shakespeare
+  %option(value="melville") herman melville
+  %option(value="poe") edgar allen poe
+  %option(value="austen") jane austen
+  %option(value="twain") mark twain
+  %option(value="marx") karl marx
+  %option(value="smith") adam smith
+
+%button#submit get it
+
+#sentence-container
+  #sentence
+  #credit
+
+%footer
+  based on andrew madden's <a href="https://github.com/amadden80/ShakeItSpeare">shake it speare</a>

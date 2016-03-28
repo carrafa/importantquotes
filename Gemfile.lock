@@ -1,0 +1,28 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cuba (3.6.0)
+      rack (~> 1.6.0)
+    cuba-haml (1.0)
+      cuba
+      haml
+    cuba-sass (1.0.0)
+      cuba (~> 3.3)
+      sass (~> 3.4)
+    haml (4.0.7)
+      tilt
+    rack (1.6.4)
+    sass (3.4.21)
+    tilt (2.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cuba
+  cuba-haml
+  cuba-sass
+  haml
+
+BUNDLED WITH
+   1.10.6
