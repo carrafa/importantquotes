@@ -1,17 +1,19 @@
-%h2 important quotes
+%h2.title important quotes
 
 .subtitle pick a writer, get a randomly generated sentence that he or she probably said at some point.
 
-%select#writer
-  %option(value="shakespeare") william shakespeare
-  %option(value="melville") herman melville
-  %option(value="poe") edgar allen poe
-  %option(value="austen") jane austen
-  %option(value="twain") mark twain
-  %option(value="marx") karl marx
-  %option(value="smith") adam smith
+.interface
 
-%button#submit get it
+  %select#writer
+    %option(value="shakespeare") william shakespeare
+    %option(value="melville") herman melville
+    %option(value="poe") edgar allen poe
+    %option(value="austen") jane austen
+    %option(value="twain") mark twain
+    %option(value="marx") karl marx
+    %option(value="smith") adam smith
+
+  %button#submit get it
 
 #sentence-container
   #sentence
