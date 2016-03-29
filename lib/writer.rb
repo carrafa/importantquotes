@@ -26,8 +26,6 @@ class Writer
     end
 
     sentence.strip!()
-    sentence[0] = sentence[0].capitalize
-    sentence.gsub!(/ i /, " I ")
     sentence += @punctuation.sample
 
     sentence
