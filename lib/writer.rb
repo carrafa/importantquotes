@@ -25,7 +25,7 @@ class Writer
       word = potential_next_words.sample
     end
 
-    sentence.strip!()
+    sentence.strip!().gsub!('_', '')
     sentence += @punctuation.sample
 
     sentence
