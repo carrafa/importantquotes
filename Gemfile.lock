@@ -11,6 +11,7 @@ GEM
       sass (~> 3.4)
     haml (4.0.7)
       tilt
+    json (1.8.3)
     rack (1.6.4)
     sass (3.4.21)
     tilt (2.0.2)
@@ -23,6 +24,7 @@ DEPENDENCIES
   cuba-haml
   cuba-sass
   haml
+  json
 
 BUNDLED WITH
    1.10.6

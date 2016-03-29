@@ -27,12 +27,12 @@ Cuba.define do
     end
 
     on "api/sentence/:writer" do |writer|
-      words = Writer.new(writer).write_sentence
+      words = { :sentence => Writer.new(writer).write_sentence }
       res.write words.to_json
     end
 
     on "api/poem/:writer" do |writer|
-      words = Writer.new(writer).write_poem
+      words = { :poem => Writer.new(writer).write_poem }
       res.write words.to_json
     end
 

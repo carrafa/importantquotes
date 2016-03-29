@@ -17,7 +17,9 @@ function getSentence(writer){
       method: 'get',
       url: '/api/sentence/' + writer,
       success: function(response){
-        renderSentence(response, writer);
+        var sentence = JSON.parse(response).sentence;
+        console.log(sentence);
+        renderSentence(sentence, writer);
       },
       error: function(err){
                console.log(err);
